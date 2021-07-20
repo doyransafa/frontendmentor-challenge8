@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ce9797;
+  text-align: center;
+  margin-top: 45px;
+  font-size: 45px;
+  letter-spacing: 12px;
+}
+
+.title-bold {
+  font-weight: 700;
+  color: #413a3a;
+}
+
+.text {
+  color: #ce9797;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-bottom: 100px;
+}
+
+.btn {
+  padding: 0 30px;
+  height: 50px;
+  border-style: none;
+  border-radius: 40px;
+  position: absolute;
+  right: 10px;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 50%);
+  box-shadow: -2px 11px 53px -9px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: -2px 11px 53px -9px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: -2px 11px 53px -9px rgba(0, 0, 0, 0.54);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 25px 0;
+  height: 25px;
+}
+
+.mobile-hero-img {
+  width: 100%;
+}
+
+.desktop-hero-img {
+  height: 20px;
+  visibility: hidden;
+}
+
+.main-container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+#emailAdress {
+  background: none;
+  border-radius: 30px;
+  min-width: 300px;
+  height: 50px;
+  padding: 0 13px;
+  border-style: solid;
+  border: 1px solid #ce9797;
+  opacity: .6;
+  position: absolute;
+}
+
+input[data-error] {
+  border: 1px solid red;
+  color: red;
+}
+
+::placeholder {
+  color: #ce9797;
+}
+
+.form {
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 0;
+  }
+  .mobile-hero-img {
+    display: none;
+  }
+  .desktop-hero-img {
+    max-width: 750px;
+    height: 100%;
+    visibility: visible;
+  }
+  .main-container {
+    width: 100%;
+    max-width: 450px;
+    padding-bottom: 100px;
+  }
+  h1 {
+    font-size: 72px;
+    text-align: left;
+    margin-top: 100px;
+  }
+  .text {
+    text-align: left;
+    font-weight: 300;
+  }
+  .logo {
+    height: 40px;
+  }
+  #emailAdress {
+    min-width: 390px;
+  }
+}
